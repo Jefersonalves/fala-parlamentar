@@ -7,7 +7,7 @@ with open("README.md", "r") as source:
 
 setuptools.setup(
     name="fala-parlamentar",
-    version="0.0.5",
+    version="0.1.0",
     author="Jeferson Alves",
     author_email="ferreira.jefersonn@gmail.com",
     description="",
