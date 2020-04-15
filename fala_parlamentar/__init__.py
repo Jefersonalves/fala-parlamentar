@@ -1,1 +1,1 @@
-from .fala_parlamentar import get_discursos_senador
+from .fala_senador import get_discursos_senador

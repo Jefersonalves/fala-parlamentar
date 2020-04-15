@@ -1,6 +1,5 @@
 import re
 import requests
-#import datetime
 import pandas as pd
 from bs4 import BeautifulSoup
 from xml.etree import ElementTree
