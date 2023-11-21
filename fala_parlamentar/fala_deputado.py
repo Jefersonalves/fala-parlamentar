@@ -32,9 +32,9 @@ def get_transcricao_discurso_camara(url, nomeParlamentar):
     titulo = None
     
     try:
-        texto_element = soup.select('#content > p')[0]
-        texto = texto_element.text.strip()
-    
+        elementos = soup.select('font > span')
+        elementos_texto = [elemento.text.strip().replace('\n', ' ') for elemento in elementos]
+        texto = " ".join(elementos_texto)
         data = re.search(r'[0-9]{2}/[0-9]{2}/[0-9]{4}', url).group(0)
         titulo = 'Pronunciamento de {} em {}'.format(nomeParlamentar, data)
     except:
