@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fala-parlamentar"
-version = "0.1.0"
+version = "0.1.1"
 description = "Módulo para obtenção dos discursos dos parlamentares via webscraping mantendo a url para a publicação do texto"
 authors = [
     { "name" = "Jeferson Alves", "email" = "contato@jefersonalves.com"}
