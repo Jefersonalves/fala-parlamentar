@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "fala-parlamentar"
+version = "0.1.0"
+description = "Módulo para obtenção dos discursos dos parlamentares via webscraping mantendo a url para a publicação do texto"
+authors = [
+    { "name" = "Jeferson Alves", "email" = "contato@jefersonalves.com"}
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["web-scraping", "senado", "camara", "congresso-nacional"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "beautifulsoup4>=4.6.3",
+    "pandas>=0.23.4",
+    "requests>=2.20.0",
+]
+requires-python = ">=3.6"
+
+
+[tool.setuptools]
+packages = ["fala_parlamentar"]
+
+
+[project.urls]
+homepage = "https://github.com/Jefersonalves/fala-parlamentar"
