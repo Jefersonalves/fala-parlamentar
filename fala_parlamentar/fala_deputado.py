@@ -17,9 +17,7 @@ def limpa_url(url_text):
     """
     remove caracteres indesejados nas urls
     """
-    url_text = re.sub("\t", "", url_text)
-    url_text = re.sub("\n", "", url_text)
-    url_text = re.sub("\r", "", url_text)
+    url_text = re.sub("[\t\n\r]", "", url_text)
     return url_text
 
 
